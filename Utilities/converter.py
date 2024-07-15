@@ -11,6 +11,7 @@ df = df.dropna()
 json_data = []
 for index, row in df.iterrows():
     entry = {
+        'id': index,
         'title': row['title'],
         'bonus': row['bonus'],
         'genre': row['genre'].split(),
